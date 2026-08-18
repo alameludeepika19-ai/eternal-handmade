@@ -1,0 +1,244 @@
+/* ================= GLOBAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #F7F3EE;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    background: #fff;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: #5A4634;
+}
+
+.navbar-brand i {
+    color: #C97C5D;
+}
+
+.nav-link {
+    color: #5A4634;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #C97C5D;
+}
+
+
+/* ================= ABOUT SECTION ================= */
+
+.about-section {
+    background-color: #f8f4ef;
+}
+
+.about-section h2 {
+    color: #5a4634;
+}
+
+.about-text {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.about-text strong {
+    color: #5a4634;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    background:
+        linear-gradient(rgba(90, 70, 52, .65), rgba(90, 70, 52, .65)),
+        url("images/floral-banner.jpg") center/cover;
+
+    height: 45vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.1rem;
+}
+
+
+/* ================= GALLERY ================= */
+
+.gallery {
+    padding: 80px 0;
+}
+
+.gallery-item {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 18px;
+    text-decoration: none;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+
+
+/* ================= GALLERY OVERLAY ================= */
+
+.overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(90, 70, 52, .7);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+
+    opacity: 0;
+    transition: .4s;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+.overlay i {
+    font-size: 3rem;
+    color: #25D366;
+    margin-bottom: 15px;
+}
+
+.overlay h5 {
+    font-weight: 600;
+}
+
+.overlay p {
+    margin-top: 10px;
+    font-size: .9rem;
+}
+
+
+/* ================= CTA ================= */
+
+.cta {
+    background: #EFE6DD;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.cta h2 {
+    color: #5A4634;
+    font-weight: 700;
+}
+
+.cta p {
+    color: #666;
+    max-width: 700px;
+    margin: auto;
+}
+
+.btn-whatsapp {
+    background: #25D366;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.btn-whatsapp:hover {
+    background: #1BA94C;
+    color: white;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #5A4634;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+footer i {
+    color: #C97C5D;
+}
+
+.hero {
+    background:
+        linear-gradient(rgba(90, 70, 52, 0.55), rgba(90, 70, 52, 0.55)),
+        url("https://ik.imagekit.io/alameludeepika/14.png?updatedAt=1785672871496") center/cover no-repeat;
+
+    min-height: 45vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.1rem;
+}
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+    .hero {
+        height: 35vh;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .gallery-item img {
+        height: 250px;
+    }
+
+    .overlay i {
+        font-size: 2.2rem;
+    }
+}

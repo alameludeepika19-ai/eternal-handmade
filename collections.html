@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Candle Collections | Eternal Handmade</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #F7F3EE;
+            color: #5A4634;
+        }
+
+        /* ================= NAVBAR ================= */
+
+        .navbar {
+            background: #ffffff;
+        }
+
+        .navbar-brand {
+            color: #5A4634;
+            font-weight: 700;
+        }
+
+        .navbar-brand i {
+            color: #C97C5D;
+        }
+
+        .nav-link {
+            color: #5A4634;
+            font-weight: 500;
+        }
+
+        .nav-link:hover {
+            color: #C97C5D;
+        }
+
+
+        /* ================= HERO ================= */
+
+        .collection-hero {
+            min-height: 45vh;
+
+            background:
+                linear-gradient(
+                    rgba(90, 70, 52, 0.65),
+                    rgba(90, 70, 52, 0.65)
+                ),
+                url("https://ik.imagekit.io/alameludeepika/214_pp%20(24).png?updatedAt=1786355860616")
+                center 65% / cover no-repeat;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+            color: white;
+        }
+
+        .collection-hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        .collection-hero p {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 15px auto 0;
+        }
+
+
+        /* ================= COLLECTIONS ================= */
+
+        #collections {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+
+        .section-title {
+            color: #5A4634;
+            font-weight: 700;
+        }
+
+        .section-subtitle {
+            color: #777;
+        }
+
+
+        /* ================= CARDS ================= */
+
+        .collection-card {
+            border: none;
+            border-radius: 18px;
+            overflow: hidden;
+
+            background: #ffffff;
+
+            box-shadow: 0 8px 25px rgba(90, 70, 52, 0.10);
+
+            transition: 0.4s;
+        }
+
+        .collection-card:hover {
+            transform: translateY(-8px);
+
+            box-shadow:
+                0 15px 35px rgba(90, 70, 52, 0.18);
+        }
+
+        .collection-card img {
+            width: 100%;
+            height: 270px;
+            object-fit: cover;
+
+            transition: 0.5s;
+        }
+
+        .collection-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .card-body {
+            padding: 25px;
+        }
+
+        .card-body h4 {
+            color: #5A4634;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .card-body p {
+            color: #666;
+            line-height: 1.7;
+            min-height: 80px;
+        }
+
+
+        /* ================= BUTTON ================= */
+
+        .collection-btn {
+            background: #C97C5D;
+            color: white;
+
+            border: none;
+
+            padding: 10px 22px;
+
+            border-radius: 25px;
+
+            transition: 0.3s;
+        }
+
+        .collection-btn:hover {
+            background: #5A4634;
+            color: white;
+        }
+
+
+        /* ================= FOOTER ================= */
+
+        footer {
+            background: #5A4634;
+            color: white;
+
+            padding: 30px;
+
+            text-align: center;
+        }
+
+        footer i {
+            color: #C97C5D;
+        }
+
+
+        /* ================= RESPONSIVE ================= */
+
+        @media (max-width: 768px) {
+
+            .collection-hero {
+                min-height: 35vh;
+            }
+
+            .collection-hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .collection-hero p {
+                font-size: 0.95rem;
+                padding: 0 15px;
+            }
+
+            .collection-card img {
+                height: 240px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+
+    <div class="container">
+
+         <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+    <img src="https://ik.imagekit.io/alameludeepika/eternal%20candles.png" alt="Eternal Handmade Logo" class="logo me-2">
+    Eternal Handmade
+</a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMenu">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <!-- HOW TO ORDER -->
+
+                <li class="nav-item dropdown">
+
+                    <a class="nav-link dropdown-toggle"
+                       href="index.html#order"
+                       role="button"
+                       data-bs-toggle="dropdown">
+
+                        How to Order
+
+                    </a>
+
+                    <ul class="dropdown-menu shadow">
+
+                        <li>
+                            <a class="dropdown-item" href="index.html#order">
+                                <i class="fa-solid fa-cart-shopping me-2"></i>
+                                Ordering Process
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="index.html#delivery">
+                                <i class="fa-solid fa-truck-fast me-2"></i>
+                                Delivery Timeline
+                            </a>
+                        </li>
+
+                       
+
+                    </ul>
+
+                </li>
+
+                <!-- COLLECTIONS -->
+
+                <li class="nav-item dropdown">
+
+                    <a class="nav-link dropdown-toggle"
+                       href="#"
+                       role="button"
+                       data-bs-toggle="dropdown">
+
+                        Collections
+
+                    </a>
+
+                    <ul class="dropdown-menu shadow">
+
+                        <li>
+                            <a class="dropdown-item" href="floral.html">
+                                <i class="fa-solid fa-spa me-2"></i>
+                                Floral Collection
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="festive.html">
+                                <i class="fa-solid fa-star me-2"></i>
+                                Festive Collection
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="gifting.html">
+                                <i class="fa-solid fa-gift me-2"></i>
+                                Gifting Collection
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="kids.html">
+                                <i class="fa-solid fa-cake-candles me-2"></i>
+                                Kids & Birthdays
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="hampers.html">
+                                <i class="fa-solid fa-box-open me-2"></i>
+                                Luxury Hampers
+                            </a>
+                        </li>
+
+                        <!-- <li>
+                            <a class="dropdown-item" href="christmas.html">
+                                <i class="fa-solid fa-tree me-2"></i>
+                                Christmas Collection
+                            </a>
+                        </li> -->
+
+                        <li>
+                            <a class="dropdown-item" href="valentine.html">
+                                <i class="fa-solid fa-heart me-2"></i>
+                                Valentine Collection
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="tealights.html">
+                                <i class="fa-solid fa-fire-flame-curved me-2"></i>
+                                Tea Lights
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="home.html">
+                                <i class="fa-solid fa-house me-2"></i>
+                                Home Essentials
+                            </a>
+                        </li>
+   <li>
+                            <a class="dropdown-item" href="concrete.html">
+                                <i class="fa-solid fa-house me-2"></i>
+                                Concrete Decor
+                            </a>
+                        </li>
+                    </ul>
+
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+<!-- ================= HERO ================= -->
+
+<section class="collection-hero">
+
+    <div class="container">
+
+        <h1>
+            Our Candle Collections
+        </h1>
+
+        <p>
+            Explore our handcrafted candles, thoughtfully designed
+            for celebrations, gifting and beautiful everyday moments.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= COLLECTIONS ================= -->
+
+<section id="collections">
+
+    <div class="container">
+
+
+        <!-- Heading -->
+
+        <div class="text-center mb-5">
+
+            <h2 class="section-title">
+                Explore Our Collections
+            </h2>
+
+            <p class="section-subtitle">
+                Handcrafted candles designed for every celebration
+                and every home.
+            </p>
+
+        </div>
+
+
+
+        <div class="row g-4">
+
+
+            <!-- ================= FLORAL ================= -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="card collection-card h-100">
+
+                    <img src="https://ik.imagekit.io/alameludeepika/14.png?updatedAt=1785672871496"
+                        alt="Floral Candles">
+
+                    <div class="card-body">
+
+                        <h4>
+                            🌸 Floral Collection
+                        </h4>
+
+                        <p>
+                            Beautiful flower-inspired candles crafted
+                            with elegance and soothing fragrances.
+                        </p>
+
+                        <a href="floral.html"
+                           class="btn collection-btn">
+
+                            View Collection
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= FESTIVE ================= -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="card collection-card h-100">
+
+                    <img src="https://ik.imagekit.io/alameludeepika/78.png?updatedAt=1785672850481"
+                        alt="Festive Candles">
+
+                    <div class="card-body">
+
+                        <h4>
+                            🎉 Festive Collection
+                        </h4>
+
+                        <p>
+                            Celebrate every festival with beautifully
+                            handcrafted decorative candles.
+                        </p>
+
+                        <a href="festive.html"
+                           class="btn collection-btn">
+
+                            View Collection
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= GIFTING ================= -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="card collection-card h-100">
+
+                    <img src="https://ik.imagekit.io/alameludeepika/71.png?updatedAt=1785672848757"
+                        alt="Gifting Sets">
+
+                    <div class="card-body">
+
+                        <h4>
+                            🎁 Gifting Collection
+                        </h4>
+
+                        <p>
+                            Premium handmade candles perfect for
+                            birthdays, weddings and special occasions.
+                        </p>
+
+                        <a href="gifting.html"
+                           class="btn collection-btn">
+
+                            View Collection
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= KIDS ================= -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="card collection-card h-100">
+
+                    <img src="https://ik.imagekit.io/alameludeepika/39.png?updatedAt=1785672850290"
+                        alt="Kids Themed Candles">
+
+                    <div class="card-body">
+
+                        <h4>
+                            🧸 Kids & Birthdays
+                        </h4>
+
+                        <p>
+                            Fun character-themed candles made to
+                            brighten birthday celebrations.
+                        </p>
+
+                        <a href="kids.html"
+                           class="btn collection-btn">
+
+                            View Collection
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= HAMPERS ================= -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="card collection-card h-100">
+
+                    <img src="https://ik.imagekit.io/alameludeepika/154.png?updatedAt=1785672843376"
+                        alt="Luxury Hampers">
+
+                    <div class="card-body">
+
+                        <h4>
+                            🧺 Luxury Hampers
+                        </h4>
+
+                        <p>
+                            Curated gift hampers filled with handcrafted
+                            candles and thoughtful surprises.
+                        </p>
+
+                        <a href="hampers.html"
+                           class="btn collection-btn">
+
+                            View Collection
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= CHRISTMAS =================
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="card collection-card h-100">
+
+                    <img src="https://ik.imagekit.io/alameludeepika/57.png?updatedAt=1785672843597"
+                        alt="Christmas Candles">
+
+                    <div class="card-body">
+
+                        <h4>
+                            🎄 Christmas Collection
+                        </h4>
+
+                        <p>
+                            Festive candles designed to spread warmth,
+                            fragrance and holiday cheer.
+                        </p>
+
+                        <a href="christmas.html"
+                           class="btn collection-btn">
+
+                            View Collection
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div> -->
+
+
+
+            <!-- ================= VALENTINE ================= -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="card collection-card h-100">
+
+                    <img src="https://ik.imagekit.io/alameludeepika/42.png?updatedAt=1785672851722"
+                        alt="Valentine Candles">
+
+                    <div class="card-body">
+
+                        <h4>
+                            ❤️ Valentine Collection
+                        </h4>
+
+                        <p>
+                            Romantic handcrafted candles perfect for
+                            creating unforgettable moments.
+                        </p>
+
+                        <a href="valentine.html"
+                           class="btn collection-btn">
+
+                            View Collection
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= TEA LIGHTS ================= -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="card collection-card h-100">
+
+                    <img src="https://ik.imagekit.io/alameludeepika/45.png?updatedAt=1785672849531"
+                        alt="Tea Light Candles">
+
+                    <div class="card-body">
+
+                        <h4>
+                            🕯 Tea Lights
+                        </h4>
+
+                        <p>
+                            Elegant tea lights ideal for décor,
+                            meditation and festive arrangements.
+                        </p>
+
+                        <a href="tealights.html"
+                           class="btn collection-btn">
+
+                            View Collection
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= HOME ================= -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="card collection-card h-100">
+
+                    <img src="https://ik.imagekit.io/alameludeepika/148.png?updatedAt=1785672824857"
+                        alt="Home Candles">
+
+                    <div class="card-body">
+
+                        <h4>
+                            🏡 Home Essentials
+                        </h4>
+
+                        <p>
+                            Simple everyday candles that bring warmth,
+                            fragrance and comfort to your home.
+                        </p>
+
+                        <a href="home.html"
+                           class="btn collection-btn">
+
+                            View Collection
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= CONCRETE DECOR ================= -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="card collection-card h-100">
+
+                    <img src="https://ik.imagekit.io/alameludeepika/214_pp%20(78).png?updatedAt=1786355860311"
+                        alt="Concrete Decor Candles">
+
+                    <div class="card-body">
+
+                        <h4>
+                            🏺 Concrete Décor
+                        </h4>
+
+                        <p>
+                            Stylish concrete candles and décor pieces
+                            designed to add a modern, earthy touch
+                            to your home.
+                        </p>
+
+                        <a href="concrete.html"
+                           class="btn collection-btn">
+
+                            View Collection
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer py-5">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+            <!-- Brand -->
+
+            <div class="col-lg-4">
+
+                <h3 class="footer-title">
+                    
+                   <img src="https://ik.imagekit.io/alameludeepika/eternal%20candles.png" alt="Eternal Handmade Logo" class="logo me-2">
+    Eternal Handmade
+                </h3>
+
+                <p>
+                    Handcrafted candles made with love for every celebration.
+                    From personalised gifts to elegant home décor, every candle
+                    is created especially for you.
+                </p>
+
+            </div>
+
+            <!-- Quick Links -->
+
+            <div class="col-lg-4">
+
+                <h5 class="footer-heading">Quick Links</h5>
+
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="index.html#collections">
+                            <i class="fa-solid fa-angle-right"></i>
+                            Collections
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#order">
+                            <i class="fa-solid fa-angle-right"></i>
+                            How to Order
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#reviews">
+                            <i class="fa-solid fa-angle-right"></i>
+                            Customer Reviews
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            <i class="fa-solid fa-angle-right"></i>
+                            Contact Us
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- Contact -->
+
+            <div class="col-lg-4">
+
+                <h5 class="footer-heading">Contact</h5>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Coimbatore, Tamil Nadu
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+919500359756">+91 95003 59756</a>
+                </p>
+
+                <p>
+                    <i class="fa-brands fa-whatsapp text-success"></i>
+
+                    <a href="https://wa.me/919500359756" target="_blank">
+                        Chat on WhatsApp
+                    </a>
+
+                </p>
+
+                <p>
+                   <a href="mailto:eternal.candles3@gmail.com">
+    <i class="fas fa-envelope"></i> eternal.candles3@gmail.com
+</a>
+                </p>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="text-center">
+
+            <p class="mb-0">
+                © 2026 Eternal Handmade • Handmade with
+                <i class="fa-solid fa-heart text-danger"></i>
+                in Coimbatore.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
